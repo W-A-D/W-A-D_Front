@@ -1,0 +1,368 @@
+@font-face {
+    font-family: 'Pretendard-Bold';
+    src: url('../fonts/Pretendard-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Medium';
+    src: url('../fonts/Pretendard-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('../fonts/Pretendard-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-SemiBold';
+    src: url('../fonts/Pretendard-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('../fonts/Montserrat-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+html {
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+}
+
+body {
+    background-color: #ffffff;
+    width: 1536px;
+}
+
+/* Desktop header */
+.WADpublic-Desktop-Header {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 200.5px;
+    padding-right: 200.5px;
+    align-items: center;
+    width: 1135px;
+    height: 92px;
+}
+
+.WADpublic-logoText {
+    font-family: 'Montserrat-Bold';
+    font-size: 32px;
+    color: #0047FF;
+    cursor: pointer;
+}
+
+.WADpublic-headerRight {
+    display: flex;
+    gap: 100px;
+}
+
+.WADpublic-about,
+.WADpublic-signIn-Up {
+    font-family: 'Pretendard-SemiBold';
+    font-size: 19px;
+    font-weight: 600;
+    color: #030027;
+    cursor: pointer;
+}
+
+/* 이 아래는 로그인, 회원 가입 모달 css */
+
+
+
+
+
+
+
+.modal2 {
+    width: 650px;
+    height: 765px;
+    background: #ffffff;
+    border-radius: 60px;
+    padding: 40px;
+    position: relative;
+    align-items: center;
+    outline: none;
+    border: none;
+}
+
+.modal-join {
+    font-family: "Pretendard-Bold";
+    font-weight: 600;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+/* Modal content styles */
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 80px;
+    gap: 20px;
+}
+
+.modal-content div {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 38.19px;
+    color: #030027;
+}
+
+.input-container {
+    font-weight: 500;
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-container label {
+    display: block;
+    font-size: 22px;
+    font-weight: 500;
+    color: #D1D5D7;
+    margin-bottom: 5px;
+}
+
+.input-container input[type="text"],
+.input-container input[type="password"],
+.input-container input[type="email"],
+.input-container input[type="nickname"] {
+    font-family: "Pretendard-Regular";
+    width: 490px;
+    height: 70px;
+    padding: 20px;
+    color: #47494A;
+    font-size: 22px;
+    line-height: 26.25px;
+    font-weight: 500;
+    border: 1px solid #D1D5D7;
+    border-radius: 15px;
+    background-color: transparent;
+    box-sizing: border-box;
+}
+
+input::placeholder {
+    color: #D1D5D7;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 26.25px;
+}
+
+.checkbox-join-container {
+    font-family: "Pretendard-Regular";
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+/* Custom checkbox styles */
+.checkbox-join-container input[type="checkbox"] {
+    display: none;
+    /* Hide the default checkbox */
+}
+
+.checkbox-join-container label {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    position: relative;
+    cursor: pointer;
+    color: #D1D5D7;
+    font-weight: 500;
+    line-height: 21.48px;
+}
+
+.checkbox-join-container .all-agree-label {
+    font-size: 22px;
+    color: #D1D5D7;
+    margin-bottom: 18px;
+    /* Space below the "모두 동의합니다" checkbox */
+}
+
+.checkbox-join-container .all-agree-label.checked {
+    color: #467AFF;
+}
+
+
+.checkbox-join-container .checkbox-custom {
+    position: absolute;
+    right: 80px;
+    background-size: cover;
+}
+
+.checkbox-join-container .all-agree-label .checkbox-custom {
+    position: absolute;
+    right: 77px;
+    width: 30px;
+    /* Adjust size for the "모두 동의합니다" checkbox */
+    height: 30px;
+    /* Adjust size for the "모두 동의합니다" checkbox */
+    background-image: url('./images/uncheck-1.png');
+    /* Default unchecked image */
+}
+
+.checkbox-join-container label:not(.all-agree-label) .checkbox-custom {
+    width: 24px;
+    /* Adjust size for other checkboxes */
+    height: 24px;
+    /* Adjust size for other checkboxes */
+    background-image: url('./images/uncheck-1.png');
+    /* Default unchecked image */
+}
+
+.checkbox-join-container input[type="checkbox"]:checked+.checkbox-custom {
+    background-image: url('./images/check.png');
+    /* Checked image */
+}
+
+.checkbox-join-container label:not(.all-agree-label) {
+    text-decoration: underline;
+}
+
+.modal-join-footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.modal-join-footer button {
+    width: 490px;
+    height: 70px;
+    background-color: #0047FF;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.modal-join-footer button:hover {
+    background-color: #0036cc;
+}
+
+
+/* Login modal specific styles */
+.modal1 {
+    width: 650px;
+    height: 510px;
+    background: #ffffff;
+    border-radius: 60px;
+    padding: 40px;
+    position: relative;
+    align-items: center;
+    /* Add this line */
+    justify-content: center;
+    /* Add this line */
+    outline: none;
+    border: none;
+}
+
+.modal-login {
+    font-family: "Pretendard-Bold";
+    font-weight: 600;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 32px;
+    color: #030027;
+}
+
+.checkbox-login-container {
+    display: flex;
+    align-items:center;
+}
+
+.checkbox-login-container label {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    position: relative;
+    cursor: pointer;
+    color: #D1D5D7;
+    font-weight: 500;
+    line-height: 21.48px;
+    gap: 10px;
+}
+
+.checkbox-login-container input[type="checkbox"] {
+    display: none;
+    /* Hide the default checkbox */
+}
+
+.checkbox-login-container .checkbox-custom {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    background-image: url('./images/uncheck-1.png');
+    /* Default unchecked image */
+    background-size: cover;
+}
+
+.checkbox-login-container input[type="checkbox"]:checked+.checkbox-custom {
+    background-image: url('./images/check.png');
+    /* Checked image */
+}
+
+.modal-login-container {
+    display: flex;
+    gap: 5px;
+    margin-left: 0px;
+}
+
+.modal-login-container div {
+    font-family: "Pretendard-Regular";
+    font-weight: 500;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.modal-login-container span{
+    font-family: "Pretendard-Regular";
+    font-weight: 500;
+    font-size: 20px;
+    color: #A1A6A9;
+}
+
+.modal-login-container div:hover {
+    text-decoration: underline;
+}
+
+.modal-login-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    gap: 20px;
+}
+
+
+.modal-login-button {
+    width: 490px;
+    height: 70px;
+    background-color: #0047FF;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.modal-login-button button:hover {
+    background-color: #0036cc;
+}

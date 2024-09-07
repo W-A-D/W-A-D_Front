@@ -1,0 +1,184 @@
+@font-face {
+    font-family: 'Pretendard-Bold';
+    src: url('../fonts/Pretendard-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Medium';
+    src: url('../fonts/Pretendard-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('../fonts/Pretendard-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-SemiBold';
+    src: url('../fonts/Pretendard-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('../fonts/Montserrat-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+
+.ScheduleDetail_container {
+    width: 1205px;
+    height: 848px;
+    padding-left: 130.5px;
+    padding-right: 200.5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ScheduleDetailMainArea {
+    display: flex;
+    width: 1135px;
+    padding-top: 22.5px;
+    justify-content: space-between;
+}
+
+.ScheduleDetailLeftArea {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 35px;
+    width: 588px;
+    height: 700px;
+}
+
+.ScheduleDetailRightArea {
+    width: 518px;
+    height: 674px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+.ScheduleDetail_category {
+    font-family: Pretendard-Medium;
+    font-size: 22px;
+    color: #0047FF;
+
+}
+
+.ScheduleDetail_title {
+    font-family: Pretendard-Semibold;
+    font-size: 24px;
+    color: #030027;
+}
+
+.ScheduleDetail_body {
+    display: flex;
+    flex-direction: column;
+    height: 593px;
+}
+
+.ScheduleDetail_postInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ScheduleDetail_userInfo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.ScheduleDetail_profileImg,
+.ScheduleDetail_profileImg img {
+    width: 35px;
+    height: 35px;
+}
+
+.ScheduleDetail_profileName {
+    font-family: Pretendard-Medium;
+    font-size: 18px;
+    color: #75787A;
+}
+
+.ScheduleDetail_date {
+    font-family: Pretendard-Medium;
+    font-size: 16px;
+    color: #75787A;
+}
+
+.ScheduleDetail_grayBar1 img,
+.ScheduleDetail_grayBar2 img {
+    width: 518px;
+}
+
+.ScheduleDetail_mainContents {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 472px;
+    height: 377px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 23px;
+    padding-right: 23px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.ScheduleDetail_term {
+    font-family: Pretendard-Medium;
+    font-size: 18px;
+    color: #467AFF;
+}
+
+.ScheduleDetail_title {
+    font-family: Pretendard-Medium;
+    font-size: 20px;
+    color: #47494A;
+}
+
+.ScheduleDetail_additionalInfo {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.ScheduleDetail_postView,
+.ScheduleDetail_postLike {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.ScheduleDetail_postViewIcon,
+.ScheduleDetail_postLikeIcon {
+    width: 38px;
+    height: 38px;
+}
+
+.ScheduleDetail_postViewIcon img,
+.ScheduleDetail_postLikeIcon img {
+    width: 38px;
+    height: 38px;
+}
+
+.ScheduleDetail_postViewText,
+.ScheduleDetail_postLikeText {
+    font-family: Pretendard-Medium;
+    font-size: 20px;
+    color: #A1A6A9;
+}

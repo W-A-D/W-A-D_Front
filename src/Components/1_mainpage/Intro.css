@@ -1,0 +1,97 @@
+@font-face {
+  font-family: 'Pretendard-Bold';
+  src: url('../fonts/Pretendard-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pretendard-Medium';
+  src: url('../fonts/Pretendard-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('../fonts/Pretendard-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pretendard-SemiBold';
+  src: url('../fonts/Pretendard-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: url('../fonts/Montserrat-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+.wad_intro_container {
+  position: relative;
+  width: 1536px;
+  height: 393px;
+  display: flex;
+  justify-content: space-between;
+  /* 내부 요소들을 양쪽 끝으로 배치 */
+  align-items: center;
+  /* 수직으로 중앙 정렬 */
+  background: #030027;
+}
+
+
+.wad_text_container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 170px;
+  /* 텍스트와 이미지 사이 간격 줄이기 */
+}
+
+.wad_title {
+  width: fit-content;
+  margin-bottom: 25px;
+  /* 아래 공간 추가 */
+}
+
+.wad_title_text {
+  font-family: Montserrat;
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 58.64px;
+  text-align: left;
+  color: white;
+}
+
+.wad_title_text .wad_highlight {
+  color: #789EFF;
+  /* WAD의 색상을 지정 */
+}
+
+.wad_sub_title {
+  width: fit-content;
+}
+
+.wad_sub_title_text {
+  font-family: Pretendard;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: left;
+  color: white;
+  /* 글자 색상을 흰색으로 지정 */
+}
+
+.intro_aiImage img {
+  width: 400px;
+  height: auto;
+  /* 비율 유지 */
+  margin-right: 170px;
+  /* 텍스트와 이미지 사이 간격 줄이기 */
+}
