@@ -1,0 +1,656 @@
+@font-face {
+    font-family: 'Pretendard-Bold';
+    src: url('../fonts/Pretendard-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Medium';
+    src: url('../fonts/Pretendard-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('../fonts/Pretendard-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-SemiBold';
+    src: url('../fonts/Pretendard-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('../fonts/Montserrat-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter-Medium';
+    src: url('../fonts/Inter-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+.MypageMyQ-maincontainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 888px;
+}
+
+.MypageMyQ-blueheaderline {
+    width: 100%;
+    height: 110px;
+    background-color: #789EFF;
+}
+
+.MypageMyQ-maincontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 200.5px;
+    padding-right: 200.5px;
+    width: 1135px;
+    height: 778px;
+}
+
+/* 프로필 이미지 좌우 15px */
+
+.MypageMyQ-widget {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    margin-top: -36px;
+}
+
+.MypageMyQ-profile {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    padding: 15px;
+    display: flex;
+    align-items: end;
+    cursor: pointer;
+}
+
+.MypageMyQ-profileimage {
+    width: 120px;
+    height: 120px;
+}
+
+.MypageMyQ-profileimage img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; /* 이미지를 원형으로 만듦 */
+    object-fit: cover; 
+}
+
+
+.MypageMyQEdit {
+    position: absolute;
+    bottom: 15px;
+    left: 105px;
+    z-index: 1;
+    width: 34px;
+    height: 34px;
+}
+
+.MypageMyQEdit img {
+    width: 34px;
+    height: 34px;
+}
+
+.MypageMyQ0-postBigContainer {
+    width: 945px;
+    height: 100%;
+}
+
+.MypageMyQ-postcontainer {
+    width: 945px;
+    height: 885px;
+}
+
+
+.MypageMyQ-userInfo {
+    margin-top: 9px;
+    display: flex;
+    flex-direction: column;
+}
+
+.MypageMyQ-user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 120px;
+}
+
+.MypageMyQ-userName {
+    font-family: Pretendard-bold;
+    font-size: 24px;
+    color: #0047FF;
+}
+
+.MypageMyQ-sir {
+    font-family: Pretendard-Medium;
+    font-size: 18px;
+    color: #030027;
+}
+
+.MypageMyQ-userQnA {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 107px;
+}
+
+.MypageMyQ-userQ {
+    font-family: Pretendard-Medium;
+    font-size: 20px;
+    color: #0047FF;
+    cursor: pointer;
+}
+
+.MypageMyQ-userA {
+    font-family: Pretendard-Medium;
+    font-size: 20px;
+    color: #A1A6A9;
+    cursor: pointer;
+}
+
+.MypageMyQ-unregister {
+    font-family: Pretendard-Medium;
+    font-size: 20px;
+    color: #A1A6A9;
+    cursor: pointer;
+    margin-top: 250px;
+}
+
+.MypageMyQ-postcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 905px;
+    height: 683px;
+    padding-left: 40px;
+}
+
+.MypageMyQ-postcontainerHeader {
+    font-family: Pretendard-Semibold;
+    font-size: 30px;
+    color: #0047FF;
+    margin-top: 25px;
+}
+
+.MypageMyQ-postFilter {
+    display: flex;
+    gap: 20px;
+    font-family: Pretendard-Medium;
+    font-size: 20px;
+    color: #D1D5D7;
+    cursor: pointer;
+    margin-top: 16px;
+}
+
+.MypageMyQ-postFilter div.active {
+    color: #0047FF;
+}
+
+.MypageMyQ-postList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 21px;
+    grid-row-gap: 20px;
+    height: 550px;
+    margin-top: 16px;
+}
+
+.MypageMyQ-postbox {
+    width: 402px;
+    height: 130px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #F6F6F6;
+    display: flex;
+    justify-content: space-between;
+}
+
+.MypageMyQ-Q-Mark {
+    font-family: Pretendard-Semibold;
+    font-size: 32px;
+    color: #0047FF;
+}
+
+.MypageMyQ-Post {
+    width: 367px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+}
+
+.MypageMyQ-postInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.MypageMyQ-postheader {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.MypageMyQ-postCategory {
+    font-family: Pretendard-Medium;
+    font-size: 14px;
+    color: #0047FF;
+}
+
+.MypageMyQ-postTitle {
+    font-family: Pretendard-Medium;
+    font-size: 16px;
+    color: #47494A;
+}
+
+.MypageMyQ-days-ago {
+    font-family: Pretendard-Medium;
+    font-size: 14px;
+    color: #A1A6A9;
+}
+
+.MypageMyQ-postSummary {
+    width: 367px;
+    height: 55px;
+    font-family: Pretendard-Medium;
+    font-size: 14px;
+    line-height: 16.71px;
+    color: #A1A6A9;
+    margin-top: 12px;
+}
+
+.MypageMyQ-additionalInfo {
+    display: flex;
+    justify-content: flex-end;
+    width: 367px;
+    margin-top: 15px;
+    gap: 10px;
+}
+
+.MypageMyQ-postComment,
+.MypageMyQ-postLike {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5px;
+    width: auto;
+    height: 18px;
+}
+
+.MypageMyQ-postCommentIcon,
+.MypageMyQ-postLikeIcon {
+    width: 18px;
+    height: 18px;
+}
+
+.MypageMyQ-postCommentIcon img,
+.MypageMyQ-postLikeIcon img {
+    width: 18px;
+    height: 18px;
+}
+
+.MypageMyQ-postCommentText,
+.MypageMyQ-postLikeText {
+    font-family: Pretendard-Regular;
+    font-size: 14px;
+    color: #A1A6A9;
+}
+
+.MypageMyQ-pagination {
+    margin-top: 30px;
+    width: 905px;
+    padding-left: 40px;
+    height: 38.38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+
+.MypageMyQ-pagination button {
+    width: 38.38px;
+    height: 38.38px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    font-family: Inter-Medium;
+    font-size: 16px;
+    text-align: center;
+    color: #D1D5D7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    border: none;
+}
+
+.MypageMyQ-pagination button.active {
+    background-color: #DDE6FF;
+    color: #467AFF;
+}
+
+.unregisterModal {
+    width: 450px;
+    height: 290px;
+    border-radius: 60px;
+    padding-top: 40px;
+    padding-right: 60px;
+    padding-bottom: 60px;
+    padding-left: 60px;
+    background-color: #ffffff;
+    outline: none;
+    border: none;
+}
+
+.unregisterModal-xIcon {
+    width: 450px;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.unregisterModal-xIcon img {
+    width: 38px;
+    height: 38px;
+    cursor: pointer;
+}
+
+.unregisterModal-contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.unregisterModal-Title {
+    font-family: Pretendard-Semibold;
+    font-size: 32px;
+    color: #000000;
+}
+
+.unregisterModal-WarningText {
+    margin-top: 45px;
+    font-family: Pretendard-Medium;
+    font-size: 22px;
+    color: #030027;
+    line-height: 26.26px;
+    text-align: center;
+}
+
+.unregisterModal-userSelect {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 49px;
+}
+
+.unregisterModal-cancel {
+    width: 210px;
+    height: 70px;
+    border-radius: 15px;
+    background-color: #0047FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Pretendard-Medium;
+    font-size: 24px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.unregisterModal-unregister {
+    width: 210px;
+    height: 70px;
+    border-radius: 15px;
+    background-color: #E9EBEC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Pretendard-Medium;
+    font-size: 24px;
+    color: #030027;
+    cursor: pointer;
+}
+
+.unregisterAlarmModal {
+    width: 430px;
+    height: 254px;
+    border-radius: 60px;
+    padding-top: 86px;
+    padding-right: 70px;
+    padding-bottom: 50px;
+    padding-left: 70px;
+    background-color: #ffffff;
+    outline: none;
+    border: none;
+}
+
+.unregisterAlarmModal-Container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.unregisterAlarmModal-Title {
+    display: flex;
+    justify-content: center;
+    font-family: Pretendard-Semibold;
+    font-size: 32px;
+    color: #030027;
+}
+
+.unregisterAlarmModal-AlarmText{
+    display: flex;
+    justify-content: center;
+    font-family: Pretendard-Medium;
+    font-size: 22px;
+    color: #030027;
+    margin-top: 58px;
+}
+
+.unregisterAlarmModal-cancel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 433px;
+    height: 70px;
+    background-color: #0047FF;
+    border-radius: 15px;
+    font-family: Pretendard-Medium;
+    font-size: 24px;
+    color: #FFFFFF;
+    cursor: pointer;
+    margin-top: 62px;
+}
+
+.editProfileModal {
+    width: 760px;
+    height: 463px;
+    padding-top: 67px;
+    padding-bottom: 67px;
+    padding-right: 80px;
+    padding-left: 80px;
+    background-color: #FFFFFF;
+    border-radius: 60px;
+    outline: none;
+    border: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.editProfileModal-Header {
+    width: 760px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.editProfileModal-Title {
+    font-family: Pretendard-Semibold;
+    font-size: 32px;
+    color: #000000;
+}
+
+.editProfileModal-xIcon, .editProfileModal-xIcon img{
+    width: 38px;
+    height: 38px;
+    cursor: pointer;
+}
+
+.editProfileModal-Contents {
+    width: 760px;
+    height: 292px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 74px;
+}
+
+.editProfileModal-profileLeft {
+    margin-left: 20px;
+    height: 292px;
+}
+.editProfileModal-profile {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+}
+
+.editProfileModal-profileimage {
+    width: 160px;
+    height: 160px;
+}
+
+.editProfileModal-profileimage img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover; 
+}
+
+.editProfileModal-editImg img{
+    position: absolute;
+    bottom: 0px;
+    left: 120px;
+    z-index: 2;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+}
+
+.editProfileModal-userInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.editProfileModal-user {
+    width: 160px;
+    padding-bottom: 14px;
+    border-bottom: 4px dotted #D1D5D7;
+}
+
+.editProfileModal-userNameInput {
+    width: 160px;
+    border: none;
+    outline: none;
+    font-family: Pretendard-Bold;
+    font-size: 28px;
+    text-align: center;
+}
+
+.editProfileModal-ProfileRight {
+    width: 500px;
+    height: 292px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.editProfileModal-IdBox, .editProfileModal-PwBox, .editProfileModal-EmailBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 52px;
+}
+
+.editProfileModal-IdText, .editProfileModal-PwText, .editProfileModal-EmailText {
+    font-family: Pretendard-Medium;
+    font-size: 22px;
+    color: #47494A;
+}
+
+.editProfileModal-userId, .editProfileModal-userPw, .editProfileModal-userEmail {
+    width: 363px;
+    height: 52px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #D1D5D7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.editProfileModal-userIdInput, .editProfileModal-userPwInput, .editProfileModal-userEmailInput {
+    padding-left: 10px;
+    width: 349px;
+    height: 42px;
+    font-family: Pretendard-Medium;
+    font-size: 22px;
+    color: #47494A;
+    outline: none;
+    border: none;
+}
+
+.editProfileModal-editIcon2, .editProfileModal-editIcon2 img {
+    width: 24px;
+    height: 24px;
+}
+
+.editProfileModal-Save {
+    margin-left: 540px;
+    width: 220px;
+    height: 62px;
+    background-color: #0047FF;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Pretendard-Semibold;
+    font-size: 20px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+
+.modal-open .MypageMyQEdit {
+    pointer-events: none;
+    opacity: 0;
+}
+
+.modal-open .MypageMyAEdit {
+    pointer-events: none;
+    opacity: 0;
+}

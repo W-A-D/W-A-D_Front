@@ -1,0 +1,656 @@
+@font-face {
+  font-family: 'Pretendard-Bold';
+  src: url('../fonts/Pretendard-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pretendard-Medium';
+  src: url('../fonts/Pretendard-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('../fonts/Pretendard-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pretendard-SemiBold';
+  src: url('../fonts/Pretendard-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: url('../fonts/Montserrat-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+.GeneralMain_container {
+  width: 1135px;
+  padding-top: 47px;
+  padding-left: 200.5px;
+  padding-right: 200.5px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+
+/* .general-search-wrapper {
+  position: relative;
+  background: #F6F6F6;
+  box-sizing: border-box;
+  width: 512px;
+  height: 53px;
+  padding: 14px 24px;
+  gap: 10px;
+  border-radius: 30px;
+}
+
+.search-input {
+  width: 100%;
+  height: 100%;
+  padding-left: 34px;
+  border: none;
+  border-radius: 30px;
+  background: transparent;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+.search-icon {
+  position: absolute;
+  left: 25px;
+  top: 40%;
+  transform: translateY(-25%);
+  width: 20px;
+  height: 20px;
+  background: url('./generalboard_images/search.png') no-repeat center center;
+  background-size: contain;
+  pointer-events: none;
+}
+
+.search-input:focus {
+  outline: none;
+  /* 포커스 시 외곽선 제거 */
+/* }  */
+
+.GeneralMain_SearchBar {
+  width: 512px;
+  height: 53px;
+  margin-top: 1px;
+  background-color: #F6F6F6;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 30px;
+  gap: 20px;
+}
+
+.GeneralMain_magnifier {
+  width: 24px;
+  height: 24px;
+  margin-left: 24px;
+}
+
+.GeneralMain_magnifier img {
+  width: 24px;
+  height: 24px;
+}
+
+.GeneralMain_searcharea {
+  width: 400px;
+  height: 30px;
+  background-color: #F6F6F6;
+  font-family: Pretendard-Medium;
+  font-size: 24px;
+  color: #47494A;
+  border: none;
+  outline: none;
+}
+
+.general-main-title {
+  font-family: 'Pretendard-SemiBold';
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 38.19px;
+  color: #0047FF;
+  text-align: center;
+  margin-bottom: 13px;
+}
+
+.GeneralMain_CategoryBar {
+  display: flex;
+  justify-content: space-between;
+  width: 512px;
+}
+
+.GeneralMain_planningCat,
+.GeneralMain_designCat,
+.GeneralMain_frontCat,
+.GeneralMain_backCat {
+  width: 110px;
+  height: 20px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  background-color: #F6F6F6;
+  border-radius: 30px;
+  text-align: center;
+  font-family: Pretendard-Medium;
+  font-size: 16px;
+  color: #A1A6A9;
+  cursor: pointer;
+}
+
+.GeneralMain_CategoryBar div.active  {
+  background-color: #0047FF;
+  color: #ffffff;
+}
+
+.GeneralQNA-LikeFilter,
+.GeneralQNA-LatestFilter {
+    cursor: pointer;
+    color: #D1D5D7;
+}
+
+.GeneralQNA-LikeFilter.active,
+.GeneralQNA-LatestFilter.active {
+    color: #0047FF;
+    /* 활성화된 상태의 색상 */
+}
+
+.general-main-title-container {
+  display: flex;
+  margin-top: 3px;
+  flex-direction: column;
+  gap: 19px;
+  align-items: center;
+  justify-content: center;
+}
+
+.general-order-option {
+  display: flex;
+  margin-bottom: 10px;
+  font-family: Pretendard-Medium;
+  font-size: 20px;
+  color: #D1D5D7;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: flex-start;
+  /* 왼쪽 정렬 */
+  align-items: center;
+  /* 수직 가운데 정렬 */
+  width: 100%;
+  /* 부모 요소의 전체 너비 사용 */
+}
+
+.general-order-option option {
+  font-family: 'Pretendard-Medium';
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 23.87px;
+  color: #D7DADC;
+  cursor: pointer;
+}
+
+.general-board-main-contents {
+  width: 1135px;
+  display: flex;
+  flex-direction: row;
+}
+
+.general-main-contents {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.general-board-QNA-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.plus-QNA {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #DDE6FF;
+  width: 870px;
+  height: 62px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.plus-QNA span {
+  font-family: 'Pretendard-SemiBold';
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 42.96px;
+  color: #789EFF;
+}
+
+.QNA-title-container {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 14px;
+  gap: 80px;
+  transform: translateX(-10px);
+  justify-content: center;
+  align-items: center;
+}
+
+.QNA-like-comment {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  margin-left: 710px;
+}
+
+.Q-title {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.QNA-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3px;
+  /* margin-bottom: 10px; */
+}
+
+.general-QNA {
+  width: 870px;
+  height: 260px;
+  border-radius: 15px;
+  background: #F6F6F6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.QNA-Q span {
+  font-family: 'Pretendard-SemiBold';
+  font-size: 55px;
+  font-weight: 600;
+  line-height: 65.63px;
+  color: #0047FF;
+}
+
+.QNA-section {
+  font-family: 'Pretendard-Medium';
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21.48px;
+  color: #0047FF;
+}
+
+.QNA-real-title {
+  font-family: 'Pretendard-SemiBold';
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28.64px;
+  color: #47494A;
+  width: 600px;
+  height: 29px;
+}
+
+.QNA-enroll {
+  font-family: 'Pretendard-Medium';
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.09px;
+  color: #A1A6A9;
+  transform: translateY(-15px);
+}
+
+.QNA-detail {
+  width: 728px;
+  height: 80px;
+  font-family: 'Pretendard-Regular';
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28.64px;
+  color: #A1A6A9;
+  margin-left: 97px;
+  margin-bottom: 20px;
+}
+
+.QNA-like {
+  padding-right: 5px;
+}
+
+.QNA-like img {
+  width: 24.49px;
+  height: 22.94px;
+}
+
+.QNA-comment img {
+  width: 27.11px;
+  height: 26.05px;
+}
+
+.QNA-like,
+.QNA-comment {
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+}
+
+.QNA-comment span,
+.QNA-like span {
+  width: 11.75px;
+  height: 19.5px;
+  font-family: 'Pretendard-Regular';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.48px;
+  color: #A1A6A9;
+}
+
+.AD-container {
+  width: 243px;
+  height: 347px;
+  border-radius: 15px;
+  background: #E9EBEC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: 30%; */
+  flex-shrink: 0;
+  /* AD 섹션의 너비가 줄어들지 않도록 설정 */
+  color: #030027;
+}
+
+.AD-container span {
+  font-family: 'Pretendard-SemiBold';
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 47.73px;
+}
+
+.general-QNA-main-container {
+  display: flex;
+  flex-direction: row;
+  /* AD와 Q&A를 가로로 정렬 */
+  gap: 25px;
+  /* 원하는 간격으로 조정 */
+  width: 100%;
+}
+
+.general-board-QNA-container {
+  display: flex;
+  flex-direction: column;
+  /* Q&A 항목들을 세로로 정렬 */
+  gap: 25px;
+}
+
+.chatgpt-img img {
+  width: 80px;
+  height: 80px;
+}
+
+.chatgpt-img {
+  display: flex;
+  position: fixed;
+  justify-content: flex-end;
+  right: 0;
+  bottom: 0;
+  padding: 40px;
+  /* padding-right: 15%; */
+  cursor: pointer;
+}
+
+.gptoverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(11, 11, 19, 0.7);
+  /* Set background to the desired color */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gptmodal {
+  display: flex;
+  flex-direction: column;
+  width: 875px;
+  height: 730px;
+  background: #ffffff;
+  border-radius: 60px;
+  padding: 40px;
+  outline: none;
+  border: none;
+  position: relative;
+  align-items: center;
+}
+
+
+
+
+.gptModal-title-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.gptModal-title-container span {
+  font-family: 'Pretendard-SemiBold';
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 35.8px;
+  text-align: center;
+  width: 250px;
+  height: 36px;
+  color: #030027;
+  position: fixed;
+}
+
+.X-img img {
+  width: 38px;
+  height: 38px;
+  cursor: pointer;
+}
+
+.X-img {
+  margin-left: 825px;
+}
+
+.gptModal-inputDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  /* 모달 내부에서 절대 위치 */
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.gptModal-inputDiv input {
+  width: 864px;
+  height: 80px;
+  border-radius: 15px;
+  border: 1px solid #A1A6A9;
+  font-family: 'Pretendard-Medium';
+  padding: 30px;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 23.87px;
+  text-align: left;
+  color: #A1A6A9;
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+
+.gptModal-inputDiv input:hover,
+.gptModal-inputDiv input:focus {
+  outline: none;
+}
+
+.gptModal-inputDiv input::placeholder {
+  width: 200px;
+  height: 25px;
+  font-family: 'Pretendard-Medium';
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 23.87px;
+  text-align: left;
+  color: #A1A6A9;
+}
+
+.submit-img img {
+  width: 38px;
+  height: 38px;
+}
+
+.submit-img {
+  position: absolute;
+  cursor: pointer;
+  right: 0;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  transform: translateX(-30px);
+}
+
+.gptModal-chat {
+  flex: 1;
+  align-items: center;
+  margin-top: 20px;
+  height: 530px;
+  padding: 8px 10px;
+  width: 885px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  overflow-y: auto;
+}
+
+.gptModal-chat::-webkit-scrollbar {
+  width: 50px;
+}
+
+.gptModal-chat::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.gptModal-chat::-webkit-scrollbar-thumb {
+  background-color: #D1D5D7;
+  /* 스크롤바 색상 */
+  border-radius: 50px;
+  /* 스크롤바 모서리 둥글게 */
+  border: 20px solid #FFFFFF;
+  /* 스크롤바를 오른쪽에서 떨어지게 하는 여백 */
+}
+
+
+.gptModal-message {
+  margin-bottom: 15px;
+  position: relative;
+  display: inline-block;
+  /* 내용에 따라 너비를 조정 */
+  word-wrap: break-word;
+  /* 긴 단어가 박스를 넘지 않도록 줄바꿈 */
+}
+
+.gptModal-message.user {
+  max-width: 660px;
+  padding: 0px 20px;
+  /* height: 70px; */
+  display: inline-block;
+  /* 내용에 따라 너비를 조정 */
+  border-radius: 15px;
+  background: #DDE6FF;
+  align-self: flex-end;
+  /* 사용자의 메시지를 오른쪽에 정렬 */
+  font-family: 'Pretendard-Regular';
+  color: #030027;
+  font-size: 20px;
+  /* margin-right: 10px; */
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+}
+
+.gptModal-message.bot {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-right: 130px;
+  padding-left: 10px;
+}
+
+.gptModal-message.bot img {
+  width: 65px;
+  height: 65px;
+  margin-right: 18px;
+}
+
+.gptModal-message.bot .message-content {
+  background: #F6F6F6;
+  max-width: 600px;
+  padding: 0px 20px;
+  /* height: 70px; */
+  display: inline-block;
+  /* 내용에 따라 너비를 조정 */
+  border-radius: 15px;
+  font-family: 'Pretendard-Regular';
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+  color: #030027;
+  align-self: flex-start;
+}
+
+
+.GeneralMain-pagination {
+  margin-top: 30px;
+  width: 905px;
+  padding-left: 40px;
+  height: 38.38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+}
+
+.GeneralMain-pagination button {
+  width: 38.38px;
+  height: 38.38px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  font-family: Inter-Medium;
+  font-size: 16px;
+  text-align: center;
+  color: #D1D5D7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  border: none;
+}
+
+.GeneralMain-pagination button.active {
+  background-color: #DDE6FF;
+  color: #467AFF;
+}

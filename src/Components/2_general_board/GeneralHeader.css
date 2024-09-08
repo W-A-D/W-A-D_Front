@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'Pretendard-Bold';
+    src: url('../fonts/Pretendard-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Medium';
+    src: url('../fonts/Pretendard-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('../fonts/Pretendard-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-SemiBold';
+    src: url('../fonts/Pretendard-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('../fonts/Montserrat-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+.general-Desktop-Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 200.5px;
+    padding-right: 200.5px;
+    width: 1135px;
+    height: 92px;
+
+}
+
+.general-main-logoText {
+    font-family: 'Montserrat-Bold';
+    font-size: 32px;
+    color: #0047FF;
+    cursor: pointer;
+}
+
+.general-headerRight {
+    display: flex;
+    gap: 80px;
+}
+
+.general-general,
+.general-schedule,
+.general-mypage,
+.general-logout {
+    font-family: 'Pretendard-SemiBold';
+    font-size: 19px;
+    font-weight: 600;
+    color: #030027;
+    cursor: pointer;
+}
+
+.general-general {
+    color: #0047FF;
+}
+
+.general-logout {
+    color: #A1A6A9;
+}

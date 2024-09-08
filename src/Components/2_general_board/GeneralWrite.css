@@ -1,0 +1,255 @@
+@font-face {
+  font-family: 'Pretendard-Bold';
+  src: url('../fonts/Pretendard-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pretendard-Medium';
+  src: url('../fonts/Pretendard-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('../fonts/Pretendard-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pretendard-SemiBold';
+  src: url('../fonts/Pretendard-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: url('../fonts/Montserrat-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+.GeneralWrite_container {
+  align-items: center;
+  width: 1536px;
+  height: 910px;
+  display: flex;
+  /* 플렉스 박스 레이아웃 사용 */
+  flex-direction: column;
+  /* 세로 방향으로 배치 */
+  padding-top: 15px;
+}
+
+
+.general-board-title-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 660px;
+}
+
+.board-submit-buttom {
+  width: Fixed (212px)px;
+  height: Fixed (52px)px;
+  top: 126px;
+  left: 1124px;
+  padding: 15px 74px 15px 74px;
+  gap: 10px;
+  border-radius: 15px;
+  background: #0047FF;
+  color: #ffffff;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  font-family: 'Pretendard-SemiBold';
+}
+
+.board-title-contents {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  transform: translateX(-80px);
+}
+
+.board-input-container {
+  margin-top: -10px;
+}
+
+.board-write-text {
+  font-family: 'Pretendard-Bold';
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 35.8px;
+  color: #030027;
+}
+
+.back_image img {
+  width: 29.22px;
+  height: 28.45px;
+  /* transform: translateX(-80px); */
+}
+
+.back_image {
+  cursor: pointer;
+}
+
+.title-check-container {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+/* 라디오 버튼에 대한 스타일 */
+input[type="radio"] {
+  margin-right: 10px;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  border-radius: 50%;
+  /* 동그란 모양으로 만들기 */
+  border: none;
+  outline: none;
+  width: 30px;
+  /* 원의 너비 설정 */
+  height: 30px;
+  /* 원의 높이 설정 */
+  outline: none;
+  /* 포커스 윤곽선 제거 */
+  background: #E9EBEC;
+}
+
+input[type="radio"]:checked {
+  border: 6px solid #E9EBEC;
+  background-color: #0047FF;
+}
+
+.radio-container {
+  display: flex;
+  flex-direction: row;
+}
+
+/* 라벨에 대한 스타일 */
+.radio-container label {
+  margin-right: 30px;
+  /* 라벨 간의 간격 설정 */
+  font-family: 'Pretendard-SemiBold';
+  font-size: 18px;
+  font-weight: 600;
+  align-items: center;
+  color: #A1A6A9;
+  display: flex;
+}
+
+/* 마지막 라벨의 오른쪽 여백 제거 */
+.radio-container label:last-of-type {
+  margin-right: 0;
+}
+
+/* 라벨에 마우스를 올렸을 때 스타일 */
+label:hover {
+  color: #0047FF;
+}
+
+
+.title1 {
+  width: 554px;
+  height: 30px;
+  left: 201px;
+  padding: 20px 24px;
+  gap: 10px;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  font-size: 24px;
+  background: #F6F6F6;
+  font-family: 'Pretendard-Regular';
+}
+
+.title1::placeholder {
+  font-family: 'Pretendard-Regular';
+  font-size: 24px;
+  text-align: left;
+  color: #A1A6A9;
+}
+
+
+.contents1 {
+  width: 1135px;
+  height: 490px;
+  border-radius: 15px;
+  border: 1px solid #D1D5D7;
+  outline: none;
+  font-size: 20px;
+  box-sizing: border-box;
+  /* padding을 포함하여 전체 크기 계산 */
+  padding: 30px;
+  /* 상자의 내부 여백 설정 */
+  resize: none;
+  /* 크기 조절 비활성화 */
+  display: flex;
+  align-items: flex-start;
+  background-color: #ffffff;
+  justify-content: flex-start;
+  font-family: 'Pretendard-Regular';
+  margin-top: 20px;
+}
+
+.contents1::placeholder {
+  font-family: 'Pretendard-Regular';
+  font-size: 20px;
+  color: #A1A6A9;
+  line-height: normal;
+  /* 줄 높이 설정 */
+}
+
+.input_file {
+  display: flex;
+  /* Flexbox를 사용하여 수평 정렬 */
+  align-items: center;
+  /* 세로 중앙 정렬 */
+  cursor: pointer;
+  width: 1135px;
+  height: 78px;
+  margin-top: 20px;
+  left: 201px;
+  border-radius: 15px;
+  background: #DDE6FF;
+  padding: 20px;
+  /* 내부 여백 추가 (선택 사항) */
+  box-sizing: border-box;
+  /* 패딩을 포함하여 전체 크기 계산 */
+}
+
+.file_image {
+  display: flex;
+  /* Flexbox를 사용하여 이미지 정렬 */
+  align-items: center;
+  /* 이미지 세로 중앙 정렬 */
+  margin-right: 20px;
+  /* 이미지와 텍스트 간의 간격 설정 */
+  padding-left: 10px;
+}
+
+.file_image img {
+  width: 21.33px;
+  height: 26.67px;
+}
+
+.file_text {
+  font-family: 'Pretendard-Medium';
+  /* 폰트 설정 */
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: center;
+  color: #789EFF;
+}
+
+.selected {
+  color: #0047FF;
+}
