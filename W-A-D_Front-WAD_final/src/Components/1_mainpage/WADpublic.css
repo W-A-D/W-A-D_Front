@@ -1,0 +1,184 @@
+@font-face {
+    font-family: 'Pretendard-Bold';
+    src: url('../fonts/Pretendard-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Pretendard-Medium';
+    src: url('../fonts/Pretendard-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('../fonts/Pretendard-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Pretendard-SemiBold';
+    src: url('../fonts/Pretendard-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('../fonts/Montserrat-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  
+  .WADpublic_container {
+    position: relative;
+    width: 100%;
+    height: 848px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+  }
+  
+  
+  /* WADpublic text and icon */
+  .WADpublic-Content {
+    display: flex;
+    align-items: center;
+    padding-left: 200.5px;
+    padding-right: 200.5px;
+    justify-content: space-between;
+    margin-top: -15px;
+  }
+  
+  .WADpublic-Text {
+    font-family: "Montserrat-Bold";
+    font-size: 116px;
+    line-height: 1.2;
+    /* Adjust line height to reduce space */
+    text-align: left;
+    /* Align text to the left */
+    position: relative;
+  }
+  
+  .WADpublic-WAD {
+    color: #0047FF;
+    position: relative;
+  }
+  
+  .WADpublic-OtherText {
+    color: #030027;
+    position: relative;
+  }
+  
+  .WADpublic-A,
+  .WADpublic-reYou {
+    left: 23px;
+    /* Adjust this value to move "Are you" */
+  }
+  
+  .WADpublic-D,
+  .WADpublic-oing {
+    left: 21px;
+    /* Adjust this value to move "Doing?" */
+  }
+  
+  .WADpublic-Icon1 {
+    width: 664px;
+    height: 664px;
+  }
+  
+  .WADpublicIcon {
+    width: 664px;
+    height: 664px;
+  }
+  
+  /* Normal board and schedule board */
+  .WADpublic-Boards {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 200.5px;
+    padding-right: 200.5px;
+    width: 1135px;
+    margin-top: -20px;
+  }
+  
+  .WADpublic-generalBoard,
+  .WADpublic-scheduleBoard {
+    display: flex;
+    align-items: center;
+    width: 528px;
+    height: 149px;
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .WADpublic-generalBoard {
+    background-color: #467AFF;
+  }
+  
+  .WADpublic-scheduleBoard {
+    background-color: #789EFF;
+  }
+  
+  .WADpublic-boardIcon1,
+  .WADpublic-boardIcon2 {
+    width: 60px;
+    height: 60px;
+    padding: 6px;
+    position: absolute;
+    left: 35px;
+  }
+  
+  .boardIcon1,
+  .boardIcon2 {
+    width: 60px;
+    /* Adjusted width */
+    height: 60px;
+    /* Adjusted height */
+  }
+  
+  .WADpublic-boardText1,
+  .WADpublic-boardText2 {
+    flex: 1;
+    /* Take reWADpublicing space */
+    padding: 10px;
+  
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28.64px;
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  .WADpublic-arrowIcon {
+    width: 70px;
+    height: 70px;
+    padding: 6px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+  }
+  
+  .arrowIcon {
+    max-width: 100%;
+    height: 100%;
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(11, 11, 19, 0.7);
+    /* Set background to the desired color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }

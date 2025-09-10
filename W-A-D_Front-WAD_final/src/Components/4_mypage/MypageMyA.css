@@ -1,0 +1,356 @@
+@font-face {
+    font-family: 'Pretendard-Bold';
+    src: url('../fonts/Pretendard-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Medium';
+    src: url('../fonts/Pretendard-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('../fonts/Pretendard-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-SemiBold';
+    src: url('../fonts/Pretendard-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('../fonts/Montserrat-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter-Medium';
+    src: url('../fonts/Inter-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+.MypageMyA-maincontainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 888px;
+}
+
+.MypageMyA-blueheaderline {
+    width: 100%;
+    height: 110px;
+    background-color: #789EFF;
+}
+
+.MypageMyA-maincontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 200.5px;
+    padding-right: 200.5px;
+    width: 1135px;
+    height: 778px;
+}
+
+/* 프로필 이미지 좌우 15px */
+
+.MypageMyA-widget {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    margin-top: -36px;
+}
+
+.MypageMyA-profile {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    padding: 15px;
+    display: flex;
+    align-items: end;
+    cursor: pointer;
+}
+
+.MypageMyA-profileimage {
+    width: 120px;
+    height: 120px;
+}
+
+.MypageMyA-profileimage img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover; 
+}
+
+.MypageMyAEdit {
+    position: absolute;
+    bottom: 15px;
+    left: 105px;
+    z-index: 1;
+    width: 34px;
+    height: 34px;
+}
+
+.MypageMyAEdit img {
+    width: 34px;
+    height: 34px;
+}
+
+.MypageMyA0-postBigContainer {
+    width: 945px;
+    height: 100%;
+}
+
+.MypageMyA-postcontainer {
+    width: 905px;
+    height: 885px;
+    padding-left: 40px;
+}
+
+
+.MypageMyA-userInfo {
+    margin-top: 9px;
+    display: flex;
+    flex-direction: column;
+}
+
+.MypageMyA-user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 120px;
+}
+
+.MypageMyA-userName {
+    font-family: Pretendard-bold;
+    font-size: 24px;
+    color: #0047FF;
+}
+
+.MypageMyA-sir {
+    font-family: Pretendard-Medium;
+    font-size: 18px;
+    color: #030027;
+}
+
+.MypageMyA-userQnA {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 107px;
+}
+
+.MypageMyA-userQ {
+    font-family: Pretendard-Medium;
+    font-size: 20px;
+    color: #A1A6A9;
+    cursor: pointer;
+}
+
+.MypageMyA-userA {
+    font-family: Pretendard-Medium;
+    font-size: 20px;
+    color: #0047FF;
+    cursor: pointer;
+}
+
+.MypageMyA-unregister {
+    font-family: Pretendard-Medium;
+    font-size: 20px;
+    color: #A1A6A9;
+    cursor: pointer;
+    margin-top: 250px;
+}
+
+.MypageMyA-postcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 683px;
+}
+
+.MypageMyA-postcontainerHeader {
+    font-family: Pretendard-Semibold;
+    font-size: 30px;
+    color: #0047FF;
+    margin-top: 25px;
+}
+
+.MypageMyA-postFilter {
+    display: flex;
+    gap: 20px;
+    font-family: Pretendard-Medium;
+    font-size: 20px;
+    color: #D1D5D7;
+    cursor: pointer;
+    margin-top: 16px;
+}
+
+.MypageMyA-LikeFilter,
+.MypageMyA-LatestFilter {
+    cursor: pointer;
+    color: #D1D5D7;
+}
+
+.MypageMyA-LikeFilter.active,
+.MypageMyA-LatestFilter.active {
+    color: #0047FF;
+    /* 활성화된 상태의 색상 */
+}
+
+.MypageMyA-postList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 21px;
+    grid-row-gap: 20px;
+    height: 550px;
+    margin-top: 16px;
+}
+
+.MypageMyA-postbox {
+    width: 402px;
+    height: 130px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #F6F6F6;
+    display: flex;
+    justify-content: space-between;
+}
+
+.MypageMyA-A-Mark {
+    font-family: Pretendard-Semibold;
+    font-size: 32px;
+    color: #0047FF;
+}
+
+.MypageMyA-Post {
+    width: 367px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+}
+
+.MypageMyA-postInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.MypageMyA-postheader {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.MypageMyA-postCategory {
+    font-family: Pretendard-Medium;
+    font-size: 14px;
+    color: #0047FF;
+}
+
+.MypageMyA-postTitle {
+    font-family: Pretendard-Medium;
+    font-size: 16px;
+    color: #47494A;
+}
+
+.MypageMyA-days-ago {
+    font-family: Pretendard-Medium;
+    font-size: 14px;
+    color: #A1A6A9;
+}
+
+.MypageMyA-postSummary {
+    width: 367px;
+    height: 55px;
+    font-family: Pretendard-Medium;
+    font-size: 14px;
+    line-height: 16.71px;
+    color: #A1A6A9;
+    margin-top: 12px;
+}
+
+.MypageMyA-additionalInfo {
+    display: flex;
+    justify-content: flex-end;
+    width: 367px;
+    margin-top: 15px;
+    gap: 10px;
+}
+
+.MypageMyA-postComment,
+.MypageMyA-postLike {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5px;
+    width: auto;
+    height: 18px;
+}
+
+.MypageMyA-postCommentIcon,
+.MypageMyA-postLikeIcon {
+    width: 18px;
+    height: 18px;
+}
+
+.MypageMyA-postCommentIcon img,
+.MypageMyA-postLikeIcon img {
+    width: 18px;
+    height: 18px;
+}
+
+.MypageMyA-postCommentText,
+.MypageMyA-postLikeText {
+    font-family: Pretendard-Regular;
+    font-size: 14px;
+    color: #A1A6A9;
+}
+
+.MypageMyA-pagination {
+    margin-top: 30px;
+    width: 905px;
+    padding-left: 40px;
+    height: 38.38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+
+.MypageMyA-pagination button {
+    width: 38.38px;
+    height: 38.38px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    font-family: Inter-Medium;
+    font-size: 16px;
+    text-align: center;
+    color: #D1D5D7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    border: none;
+}
+
+.MypageMyA-pagination button.active {
+    background-color: #DDE6FF;
+    color: #467AFF;
+}

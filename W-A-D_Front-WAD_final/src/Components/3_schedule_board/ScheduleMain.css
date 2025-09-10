@@ -1,0 +1,317 @@
+@font-face {
+    font-family: 'Pretendard-Bold';
+    src: url('../fonts/Pretendard-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Medium';
+    src: url('../fonts/Pretendard-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('../fonts/Pretendard-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-SemiBold';
+    src: url('../fonts/Pretendard-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('../fonts/Montserrat-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+.ScheduleMain_container {
+    width: 1135px;
+    height: 1038px;
+    padding-top: 46px;
+    padding-left: 200.5px;
+    padding-right: 200.5px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.ScheduleMain_miniheader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 27px;
+}
+
+.ScheduleMain_Title {
+    font-family: 'Pretendard-Semibold';
+    font-size: 32px;
+    color: #0047FF;
+    text-align: center;
+}
+
+.ScheduleMain_postSorter {
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+}
+
+.ScheduleMain_SearchBar {
+    width: 512px;
+    height: 53px;
+    background-color: #F6F6F6;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 30px;
+    gap: 20px;
+}
+
+.ScheduleMain_SearchBar input{
+    background-color: #F6F6F6;
+}
+
+.ScheduleMain_magnifier {
+    width: 24px;
+    height: 24px;
+    margin-left: 24px;
+}
+
+.ScheduleMain_magnifier img {
+    width: 24px;
+    height: 24px;
+}
+
+.ScheduleMain_searcharea {
+    width: 400px;
+    height: 30px;
+    background-color: #F6F6F6;
+    font-family: Pretendard-Medium;
+    font-size: 24px;
+    color: #47494A;
+    border: none;
+    outline: none;
+}
+
+.SchedueMain_CategoryBar {
+    display: flex;
+    justify-content: space-between;
+    width: 512px;
+}
+
+.SchedueMain_planningCat,
+.SchedueMain_designCat,
+.SchedueMain_frontCat,
+.SchedueMain_backCat {
+    width: 110px;
+    height: 20px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    background-color: #F6F6F6;
+    border-radius: 30px;
+    text-align: center;
+    font-family: Pretendard-Medium;
+    font-size: 16px;
+    color: #A1A6A9;
+    cursor: pointer;
+}
+
+.SchedueMain_CategoryBar div.active  {
+    background-color: #0047FF;
+    color: #ffffff;
+}
+
+.ScheduleMain_PostContainer {
+    width: 1135px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ScheduleMain_PostArea {
+    width: 904px;
+    height: 642px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 20px;
+    /* 가로(열) 간격 설정 */
+    grid-row-gap: 20px;
+    /* 세로(행) 간격 설정 */
+}
+
+.ScheduleMain_WritePost {
+    width: 442px;
+    height: 55px;
+    text-align: center;
+    font-family: Pretendard_Semibold;
+    font-size: 36px;
+    color: #789EFF;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    background-color: #DDE6FF;
+    border-radius: 15px;
+}
+
+.ScheduleMain_Post {
+    width: 402px;
+    height: 105px;
+    padding: 20px;
+    background-color: #F6F6F6;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.ScheduleMain_postHeader {
+    width: 402px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ScheduleMain_userInfo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.ScheduleMain_profileImg img {
+    width: 30px;
+    height: 30px;
+}
+
+.ScheduleMain_profileName {
+    font-family: Pretendard-Medium;
+    font-size: 16px;
+    color: #75787A;
+}
+
+.ScheduleMain_days_ago {
+    font-family: Pretendard-Medium;
+    font-size: 14px;
+    color: #A1A6A9;
+}
+
+.ScheduleMain_postInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.ScheduleMain_postCategory {
+    font-family: Pretendard-Medium;
+    font-size: 14px;
+    color: #0047FF;
+}
+
+.ScheduleMain_postTitle {
+    font-family: Pretendard-Semibold;
+    font-size: 18px;
+    color: #47494A;
+}
+
+.ScheduleMain_additionalInfo {
+    display: flex;
+    justify-content: flex-end;
+    width: 402px;
+    gap: 15px;
+}
+
+.ScheduleMain_postView,
+.ScheduleMain_postLike {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5px;
+    width: 42.73px;
+    height: 20px;
+}
+
+.ScheduleMain_postViewIcon,
+.ScheduleMain_postLikeIcon {
+    width: 20px;
+    height: 20px;
+}
+
+.ScheduleMain_postViewIcon img,
+.ScheduleMain_postLikeIcon img {
+    width: 20px;
+    height: 20px;
+}
+
+.ScheduleMain_postViewText,
+.ScheduleMain_postLikeText {
+    font-family: Pretendard-Regular;
+    font-size: 14px;
+    color: #A1A6A9;
+}
+
+.ScheduleMain_AdArea {
+    width: 211px;
+    height: 642px;
+}
+
+.ScheduleMain_Ad1 {
+    width: 211px;
+    height: 311px;
+    border-radius: 15px;
+}
+
+.ScheduleMain_Ad1 img {
+    width: 211px;
+    height: 311px;
+}
+
+.ScheduleMain_Ad2 {
+    margin-top: 20px;
+    width: 211px;
+    height: 55px;
+    border-radius: 15px;
+    padding-top: 128px;
+    padding-bottom: 128px;
+    background-color: #E9EBEC;
+    text-align: center;
+    font-family: Pretendard-Semibold;
+    font-size: 40px;
+    color: #030027;
+}
+
+.ScheduleMain-pagination {
+    width: 1135px;
+    height: 38.38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+
+.ScheduleMain-pagination button {
+    width: 38.38px;
+    height: 38.38px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    font-family: Inter-Medium;
+    font-size: 16px;
+    text-align: center;
+    color: #D1D5D7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    border: none;
+}
+
+.ScheduleMain-pagination button.active {
+    background-color: #DDE6FF;
+    color: #467AFF;
+}

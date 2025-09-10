@@ -1,0 +1,543 @@
+@font-face {
+    font-family: 'Pretendard-Bold';
+    src: url('../fonts/Pretendard-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Medium';
+    src: url('../fonts/Pretendard-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('../fonts/Pretendard-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-SemiBold';
+    src: url('../fonts/Pretendard-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('../fonts/Montserrat-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+.ScheduleWrite_container {
+    width: 100%;
+    height: 818px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.Schedulewrite_miniheader {
+    display: flex;
+    align-items: center;
+    width: 1205px;
+    padding-left: 130.5px;
+    padding-right: 200.5px;
+    justify-content: space-between;
+}
+
+.Schedule_miniheader_left {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.GotoScheduleBoardMain img {
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+}
+
+.ScheduleWriteText {
+    font-family: Pretendard-Semibold;
+    font-size: 32px;
+    color: #030027;
+    background-color: transparent;
+}
+
+.Upload_Schedule {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 211px;
+    height: 52px;
+    font-family: Pretendard-Semibold;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #0047FF;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.ScheduleWriteMain {
+    display: flex;
+}
+
+.ScheduleWriteMain {
+    padding-left: 200.5px;
+    padding-right: 200.5px;
+    /*200.5*/
+    width: 1135px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ScheduleWriteLeftArea {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    gap: 35px;
+    width: 588px;
+    height: 670px;
+}
+
+.ScheduleCategory {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+    font-family: Pretendard-Semibold;
+    color: #A1A6A9;
+    font-size: 18px;
+}
+
+.ScheduleCategory div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* 이미지와 텍스트 사이의 간격 */
+}
+
+.category-icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.category-selected {
+    color: #0047FF;
+}
+
+.ScheduleWriteRightArea {
+    width: 518px;
+    height: 674px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.schedule-title {
+    border-radius: 15px;
+    border: none;
+    background-color: #F6F6F6;
+    font-family: Pretendard-Medium;
+    font-size: 22px;
+    color: #47494A;
+    width: 466px;
+    height: 23px;
+    padding-left: 26px;
+    padding-top: 22px;
+    padding-right: 26px;
+    padding-bottom: 22px;
+
+    outline: none;
+    border: none;
+}
+
+.schedule-title::placeholder {
+    color: #A1A6A9;
+}
+
+.ScheduleWrite_Main {
+    padding-right: 22px;
+    /* 컨테이너 우측에 패딩 추가 */
+
+    width: 478px;
+    height: 279px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #F6F6F6;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+
+.ScheduleWrite_Main::-webkit-scrollbar {
+    width: 40px;
+}
+
+.ScheduleWrite_Main::-webkit-scrollbar-track {
+    background-color: transparent;
+    margin-top: 17px;
+    margin-bottom: 17px;
+}
+
+.ScheduleWrite_Main::-webkit-scrollbar-thumb {
+    background-color: #D1D5D7;
+    /* 스크롤바 색상 */
+    border-radius: 50px;
+    /* 스크롤바 모서리 둥글게 */
+    border: 16px solid #F6F6F6;
+    /* 스크롤바를 오른쪽에서 떨어지게 하는 여백 */
+}
+
+.ScheduleWrite_Main_title {
+    font-family: Pretendard-Semibold;
+    font-size: 20px;
+    color: #467AFF;
+}
+
+.Schedule_form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.Schedule_term {
+    width: 458px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Pretendard-Semibold;
+    font-size: 20px;
+    color: #75787A;
+}
+
+.Schedule_StartDay,
+.Schedule_EndDay {
+    width: 212px;
+    height: 44px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    font-family: Pretendard-Semibold;
+    color: #D1D5D7;
+    font-size: 16px;
+}
+
+.Schedule_StartDay_input,
+.Schedule_EndDay_input {
+    width: 195px;
+    height: 22px;
+    margin-left: 15px;
+    border: none;
+    background-color: #FFFFFF;
+    font-family: Pretendard-Semibold;
+    font-size: 16px;
+    color: #75787A;
+    outline: none;
+}
+
+.Schedule_StartDay_input::placeholder,
+.Schedule_EndDay_input::placeholder {
+    font-size: 16px;
+}
+
+.Schedule-project-title {
+    width: 438px;
+    height: 120px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.Schedule-project-title-input {
+    width: 438px;
+    height: 120px;
+    background-color: transparent;
+    font-family: Pretendard-Medium;
+    font-size: 20px;
+    color: #47494A;
+    border: none;
+    outline: none;
+    resize: none;
+    overflow-y: auto;
+}
+
+.Schedule-project-title-input::-webkit-scrollbar {
+    width: 40px
+}
+
+.Schedule-project-title-input::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.Schedule-project-title-input::-webkit-scrollbar-thumb {
+    background-color: #D1D5D7;
+    /* 스크롤바 색상 */
+    border-radius: 50px;
+    /* 스크롤바 모서리 둥글게 */
+    border: 16px solid #FFFFFF;
+    /* 스크롤바를 오른쪽에서 떨어지게 하는 여백 */
+}
+
+.Schedule-project-title-input::placeholder {
+    color: #D1D5D7;
+}
+
+.Schedule-addButton {
+    width: 458px;
+    height: 40px;
+    background-color: #E9EBEC;
+    border-radius: 10px;
+    font-family: Pretendard-Semibold;
+    font-size: 22px;
+    text-align: center;
+    color: #A1A6A9;
+    cursor: pointer;
+}
+
+.Schedule_By_OpenAi_header {
+    font-family: Pretendard-Semibold;
+    font-size: 22px;
+    color: #030027;
+}
+
+.Schedule_By_OpenAi_header span {
+    color: #0047FF;
+}
+
+.Schedule_By_OpenAi_body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.User-Request {
+    width: 478px;
+    height: 24px;
+    padding: 20px;
+    background-color: #DDE6FF;
+    border-radius: 15px;
+}
+
+.User-Request-input {
+    width: 458px;
+    height: 21px;
+    font-family: Pretendard-Medium;
+    font-size: 18px;
+    color: #789EFF;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.User-Request-input::placeholder {
+    font-family: Pretendard-Medium;
+    font-size: 18px;
+    color: #789EFF;
+}
+
+.Ai-Respond {
+    background-color: #DDE6FF;
+    border-radius: 15px;
+    width: 478px;
+    height: 81px;
+    padding: 20px;
+    background-color: #DDE6FF;
+    font-family: Pretendard-Medium;
+    font-size: 18px;
+    line-height: 21.48px;
+    color: #030027;
+    overflow-y: auto;
+}
+
+.Ai-Respond::-webkit-scrollbar {
+    width: 40px
+}
+
+.Ai-Respond::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.Ai-Respond::-webkit-scrollbar-thumb {
+    background-color: #D1D5D7;
+    /* 스크롤바 색상 */
+    border-radius: 50px;
+    /* 스크롤바 모서리 둥글게 */
+    border: 16px solid #DDE6FF;
+    /* 스크롤바를 오른쪽에서 떨어지게 하는 여백 */
+}
+
+.calendar {
+    position: relative;
+    width: 588px;
+    height: 575px;
+    border-radius: 15px;
+    border: 1px solid #E9EBEC;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.react-calendar {
+    background-color: transparent;
+    font-family: 'Pretendard-Semibold';
+}
+
+.react-calendar__viewContainer {
+    width: 495px;
+    margin-top: 15px;
+}
+
+.react-calendar__navigation {
+    margin-top: 25px;
+    display: flex;
+    width: 495px;
+    height: auto;
+    justify-content: space-between !important;
+}
+
+.react-calendar__navigation button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.arrowRight,
+.arrowLeft {
+    width: 30px;
+    height: 30px;
+}
+
+/* 년/월 상단 네비게이션 칸 크기 줄이기 */
+.react-calendar__navigation__label {
+    font-family: 'Pretendard-SemiBold';
+    font-size: 32px;
+    color: #0047FF;
+    flex-grow: 0 !important;
+}
+
+
+.react-calendar__month-view__weekdays abbr {
+    text-decoration: none;
+}
+
+.react-calendar__month-view__days {
+    width: 495px;
+    height: 375px;
+}
+
+.react-calendar__month-view__weekdays {
+    font-family: 'Pretendard-Medium';
+    width: 495px;
+    height: 45px;
+    font-size: 20px;
+    color: #A1A6A9;
+}
+
+.react-calendar__month-view__days abbr {
+    font-family: 'Pretendard-Semibold';
+    font-size: 18px;
+    line-height: 40px;
+    gap: 30px;
+    color: #3D4144;
+
+}
+
+.react-calendar__tile--active {
+    background-color: transparent !important;
+    color: inherit !important;
+}
+
+.react-calendar__tile--active:enabled:focus:enabled {
+    background-color: transparent !important;
+    color: inherit !important;
+}
+
+.react-calendar__tile--now {
+    background-color: transparent !important;
+    color: inherit !important;
+}
+
+.react-calendar__tile--now:enabled:focus:enabled {
+    background-color: transparent !important;
+    color: inherit !important;
+}
+
+.react-calendar__month-view__days__day--neighboringMonth abbr {
+    color: #D1D5D7 !important;
+}
+
+/* Style for Saturday */
+.react-calendar__month-view__days__day:nth-child(7n+7) abbr {
+    color: #467AFF;
+    /* Light cyan color for Saturday */
+}
+
+/* Style for Sunday */
+.react-calendar__month-view__days__day:nth-child(7n+1) abbr {
+    color: #FF5D5D;
+    /* Light red color for Sunday */
+}
+
+.react-calendar__tile {
+    position: relative;
+    border-radius: 0px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    z-index: 1;
+    /* 기본적으로 타일이 하이라이트보다 앞에 위치 */
+}
+
+.react-calendar__month-view__days__day abbr {
+    position: relative;
+    z-index: 2;
+    /* 날짜 텍스트가 하이라이트보다 앞에 위치 */
+}
+
+
+/*스케쥴 하이라이트 css*/
+
+.schedule-highlight {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    background-color: #789EFF;
+    /* Semi-transparent background */
+    z-index: 1;
+    /* 하이라이트는 날짜 텍스트보다 뒤에, 타일보다 앞에 위치 */
+}
+
+/* 평일 하이라이트를 위한 스타일 */
+.schedule-highlight.weekday-highlight+abbr {
+    color: #FFFFFF;
+    /* 평일의 경우 텍스트 색상 변경 */
+}
+
+.schedule-highlight.start {
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.schedule-highlight.end {
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.schedule-highlight.single-day {
+    border-radius: 50px;
+}
